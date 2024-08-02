@@ -1,5 +1,5 @@
 <template>
-  <div class="">
+  <div class="mb-6">
     <Splide :options="splideOptions" aria-label="My Favorite Items">
       <SplideSlide v-for="(slide, index) in slides" :key="index">
         <div class="relative text-top">
@@ -29,6 +29,9 @@ const splideOptions = {
   gap: "1rem", // Space between slides
   pagination: false, // Disable pagination if needed
   arrows: true, // Enable navigation arrows
+  autoplay: true, // Enable autoplay
+  interval: 3000, // Interval between slides in milliseconds (3 seconds)
+  pauseOnHover: true, // Pause autoplay when the user hovers over the slider
 };
 
 const slides = [
