@@ -61,6 +61,7 @@
 
 <script setup>
 import { Splide, SplideSlide } from "@splidejs/vue-splide";
+import { ref } from "vue";
 
 const splideOptions = {
   perPage: 3, // Number of slides visible at once
@@ -72,14 +73,7 @@ const splideOptions = {
 };
 
 // Define slides data
-const slides = [
-  'All',
-  'Brand1',
-  'Brand2',
-  'Brand3',
-  'Brand4',
-  'Brand5',
-];
+const slides = ["All", "Brand1", "Brand2", "Brand3", "Brand4", "Brand5"];
 </script>
 
 <style scoped>
